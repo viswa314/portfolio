@@ -1226,11 +1226,21 @@
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/quai\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
   <script id="theme-scripts-js-extra">
-    var globalData = { "publicUrl": "/portfolio/wp-content/themes/quai/public/", "assetsUrl": "/portfolio/wp-content/themes/quai/public/webgl/" };
+    var globalData = { "publicUrl": "wp-content\/themes\/quai\/public\/", "assetsUrl": "wp-content\/themes\/quai\/public\/webgl\/" };
   </script>
   <script src="wp-content/themes/quai/public/scripts/theme8909.js?id=9e7fe216c3b4600b6920beadf5324f75"
     id="theme-scripts-js"></script>
   <!-- Intercom widget removed for local use -->
+  <script>
+    // Failsafe to hide loader if it hangs
+    setTimeout(function () {
+      var loader = document.querySelector('.js-loader');
+      if (loader && !loader.classList.contains('complete')) {
+        console.log('Failsafe: loader dismissed');
+        loader.classList.add('complete');
+      }
+    }, 8000); 
+  </script>
 </body>
 
 <!-- Personal Portfolio -->

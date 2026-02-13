@@ -1,0 +1,28 @@
+# Custom MIME types for WebGL assets
+/wp-content/themes/quai/public/webgl/*.unseen
+  Content-Type: application/json
+
+/wp-content/themes/quai/public/webgl/images/*.ktx2
+  Content-Type: image/ktx2
+
+/wp-content/themes/quai/public/webgl/images/**/*.ktx2
+  Content-Type: image/ktx2
+
+/wp-content/themes/quai/public/webgl/models/*.glb
+  Content-Type: model/gltf-binary
+
+/wp-content/themes/quai/public/basis/*.wasm
+  Content-Type: application/wasm
+
+/wp-content/themes/quai/public/basis/*.js
+  Content-Type: application/javascript
+
+/wp-content/themes/quai/public/draco/*.wasm
+  Content-Type: application/wasm
+
+/wp-content/themes/quai/public/draco/*.js
+  Content-Type: application/javascript
+
+/wp-content/themes/quai/public/videos/*.mp4
+  Content-Type: video/mp4
+
